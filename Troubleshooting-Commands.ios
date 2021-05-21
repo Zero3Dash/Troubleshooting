@@ -84,9 +84,3 @@ Useful Validation Commands - Juniper
 	show route forwarding-table destination <destination-ip>
 6. TAC Support
 	request support information | save /var/tmp/rsi_<device-name>_<date>_<time>.txt
-
-Linux Ping Sweep (x.x.x.x/24 subnet)
-	for i in {1..254} ;do (ping 192.168.100.$i -c 4 -w 10 >/dev/null && echo "192.168.100.$i" &) ;done
-
-Linus Ping Sweep using fping
-	fping -a -g 192.168.100.0/22

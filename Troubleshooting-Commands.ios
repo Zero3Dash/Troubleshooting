@@ -1,9 +1,11 @@
 StackWise Virtual
- show stackwise-virtual link
- show stackwise-virtual dual-active-detection
- show redundancy
- redundancy force-switchover
- redundancy reload peer
+show stackwise-virtual link
+show stackwise-virtual switch [[number <1-2>]]
+show stackwise-virtual bandwidth
+show stackwise-virtual neighbors
+show stackwise-virtual dual-active-detection
+show stackwise-virtual dual-active-detection pagp
+show redundancy
 
 Juniper Firewall Clusting
  show chassis cluster status

@@ -1,0 +1,6 @@
+show vlan
+show vlan brief
+show interface [[interface-name]] switchport
+show arp
+show ip arp
+show mac address-table | include Vlan[[vlan-id]]

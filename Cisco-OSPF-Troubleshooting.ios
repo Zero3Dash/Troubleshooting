@@ -1,4 +1,6 @@
 show ip ospf
 show ip ospf neighbor
+show ip ospf database
 show ip ospf database router
+show ip ospf summary
 clear ip ospf process

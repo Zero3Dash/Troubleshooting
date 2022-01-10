@@ -1,6 +1,41 @@
+----------------------------------------------
+IPv4
+----------------------------------------------
 show ip ospf
 show ip ospf neighbor
 show ip ospf database
 show ip ospf database router
 show ip ospf summary
 clear ip ospf process
+
+sh ip ospf database | begin Type-[[lsa-type]]
+sh ip ospf database router [[advertising-router-id]]
+show ip ospf database | begin ASB
+show ip ospf database external [[advertising-router-id]]
+show ip ospf [[ospf-process-id]] [[opsf-area-id]] database | begin Summary
+
+sh ip ospf border-routers
+sh ip ospf rib [[ip-address]]
+
+sh ip route ospf
+
+----------------------------------------------
+IPv6
+----------------------------------------------
+show ipv6 ospf
+show ipv6 ospf neighbor
+show ipv6 ospf database
+show ipv6 ospf database router
+show ipv6 ospf summary
+clear ipv6 ospf process
+
+sh ipv6 ospf database | begin Type-[[lsa-type]]
+sh ipv6 ospf database router [[advertising-router-id]]
+show ipv6 ospf database | begin ASB
+show ipv6 ospf database external [[advertising-router-id]]
+show ipv6 ospf [[ospf-process-id]] [[opsf-area-id]] database | begin Summary
+
+sh ipv6 ospf border-routers
+sh ipv6 ospf rib [[ip-address]]
+
+sh ipv6 route ospf

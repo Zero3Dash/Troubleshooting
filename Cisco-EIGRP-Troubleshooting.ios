@@ -1,0 +1,7 @@
+show ip route eigrp
+
+show ip eigrp neighbors
+show ip eigrp topology
+show ip eigrp interfaces detail gigabitEthernet 0/0
+
+show ip protocols | b eigrp

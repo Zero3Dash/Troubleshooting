@@ -86,3 +86,8 @@ Useful Validation Commands - Juniper
 	show route forwarding-table destination <destination-ip>
 6. TAC Support
 	request support information | save /var/tmp/rsi_<device-name>_<date>_<time>.txt
+
+Cisco CEF
+show ip cef
+show ip cef summary
+show ip cef exact-route [[source-ip]] [[destination-ip]]

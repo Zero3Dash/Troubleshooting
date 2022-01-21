@@ -1,0 +1,37 @@
+---------------------------------------------------------------
+instance-id = VRF number
+---------------------------------------------------------------
+show lisp instance-id <vrf-instance-id> ipv4 map-cache
+show lisp instance-id <vrf-instance-id> ipv4 map-cache detail
+show lisp site
+show lisp site rloc members instance-id <vrf-instance-id>
+
+---------------------------------------------------------------
+LISP - Underlay Test
+---------------------------------------------------------------
+1. Test connectivity to DC/Server
+	ping <ip-address> source lo0
+2. Test connectivity to MSMR
+	Control-Panel Unicast:
+		ping <ip-address> source <mgmt-interface>
+	Loopback of dis lay:
+		ping <ip-address> source <mgmt-interface>
+3. Test Connectivity to PxTR
+	Control-Panel Unicast
+		ping <ip-address> source <mgmt-interface>
+	LISP PETR Anycast:
+		ping <ip-address> source <mgmt-interface>
+	Loopback of core lay
+		ping <ip-address> source <mgmt-interface>
+
+---------------------------------------------------------------
+LISP - Overlay Test
+---------------------------------------------------------------
+1. Find the mapping on xtr using lig command
+	lig <ip-address> instance-id <vrf-instance-id>
+2. Debug command for lig
+	debug lisp control-panel all
+3. Route table
+	show ip route vrf <vrf-name>
+4. Test Connectivity between the clients
+	ping <eid-ip-address> from the source clients

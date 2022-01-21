@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+Cisco CEF
+---------------------------------------------------------------
+show ip cef
+show ip cef summary
+show ip cef exact-route [[source-ip]] [[destination-ip]]

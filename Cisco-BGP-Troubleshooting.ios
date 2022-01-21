@@ -1,0 +1,12 @@
+----------------------------------------------
+IPv4
+----------------------------------------------
+show ip bgp
+sh ip route bgp
+show bgp all summary
+show ip bgp neighbors <ip-address> advertised-routes
+show ip bgp neighbors <ip-address> received-routes
+
+----------------------------------------------
+IPv6
+----------------------------------------------

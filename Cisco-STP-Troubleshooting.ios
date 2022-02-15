@@ -1,0 +1,4 @@
+show spanning-tree
+show spanning-tree vlan [[vlan-id]]
+show spanning-tree vlan [[vlan-id]] detail
+show spanning-tree vlan [[vlan-id]] detail | include Port|bridge|id

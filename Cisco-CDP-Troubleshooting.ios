@@ -1,0 +1,4 @@
+no cdp run
+cdp run
+show cdp
+show cdp neighbors

@@ -1,0 +1,10 @@
+! 4PEG Configuration Template
+
+!--------------------------------------------------------------------------
+! Cisco Misc Troubleshooting
+!--------------------------------------------------------------------------
+!
+!--wipe switch (nuclear option)
+delete nvram:startup-config
+delete flash:vlan.dat
+!

@@ -1,0 +1,12 @@
+!
+ip access-list extended acl.rfc1918-deny
+ deny ip any 10.0.0.0 0.255.255.255
+ deny ip any 172.16.0.0 0.15.255.255
+ deny ip any 192.168.0.0 0.0.255.255
+ permit ip any any
+exit
+!
+interface vlan23
+ ip access-group acl.rfc1918-deny out
+exit
+!

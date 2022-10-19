@@ -1,0 +1,8 @@
+Get-NetIPAddress
+Get-NetIPInterface
+
+ipconfig /all
+netstat -rn
+
+netsh interface ipv4 show subinterface
+netsh interface ipv4 set subinterface “Local Area Connection” mtu=1360 store=persistent

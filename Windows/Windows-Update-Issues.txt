@@ -7,7 +7,7 @@ If you still have the problem, run these commands in an elevated command prompt:
  net stop bits
  net stop msiserver
  rmdir /s /q C:\Windows\SoftwareDistribution
- rmdir /s /q C:\Windows\System32\catroot2 Catroot2.2007
+ rmdir /s /q C:\Windows\System32\catroot2 Catroot2.backup
  net start wuauserv
  net start cryptSvc
  net start bits
@@ -15,9 +15,6 @@ If you still have the problem, run these commands in an elevated command prompt:
 If it tells you it cannot rename Catroot2, continue with the rest of the commands.
 
 Note any errors.
-
-Verify that C:\Windows\SoftwareDistribution.2007 folder exists.
-
 Reboot the computer.
 
 If you had no errors above (other than maybe the Catroot2 rename) try the update again.

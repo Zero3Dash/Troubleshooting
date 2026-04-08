@@ -1,0 +1,11 @@
+If the problem still exists, verify system file integrity.
+In an elevated Command Prompt (right click on cmd.exe and run as Administrator)
+
+ chkdsk /f (It will tell you it can’t do it while running, type “Y” to reboot. After reboot,
+
+ dism /online /cleanup-image /startcomponentcleanup
+ dism /online /cleanup-image /restorehealth
+
+ sfc /scannow
+
+Note any errors

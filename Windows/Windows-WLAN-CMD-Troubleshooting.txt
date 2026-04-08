@@ -1,0 +1,4 @@
+netsh wlan show profiles
+netsh wlan show profiles name=""
+netsh wlan show profiles name="" key=clear
+netsh int ip reset

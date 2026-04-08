@@ -1,0 +1,15 @@
+!-------------------------------------
+! pscp to push file to device/server
+!-------------------------------------
+!
+pscp -v -scp [[filelocation]]/[[file-name]] [[username]]@[[host-address]]:/[[file-name]]
+!
+!-------------------------------------
+! pscp to pull file from device/server
+!-------------------------------------
+!
+pscp -v -scp [[username]]@[[host-address]]:/[[file-name]] [[filelocation]]/[[file-name]]
+!
+!-------------------------------------
+!
+!-------------------------------------

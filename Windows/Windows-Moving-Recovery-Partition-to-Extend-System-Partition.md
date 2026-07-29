@@ -19,7 +19,7 @@ The `'reagentc /disable'` command will disable the recovery partition and will m
 
 - List the disks in your system. You can do this by using the command `'list disk'`
 
-> Pro tip from Matt in the comments, if there’s a * in the column for Gpt that means the disk is likely a GPT disk and if there isn’t a * in the Gpt column the disk is likely MBR. Make a note of this as it will be important further down.
+> **Pro tip**, if there’s a * in the column for Gpt that means the disk is likely a GPT disk and if there isn’t a * in the Gpt column the disk is likely MBR. Make a note of this as it will be important further down.
 
 - Select the disk you need to move the recovery partition on. You can do this by using the command `'select disk'` and the disk number. In my setup disk 0 was the correct disk and the command I entered was `'select disk 0'`.
 
